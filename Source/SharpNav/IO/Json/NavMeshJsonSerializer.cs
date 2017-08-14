@@ -54,7 +54,7 @@ namespace SharpNav.IO.Json
 				{
 					
 					snj = FormatVersion,
-					sharpnav = Assembly.GetExecutingAssembly().GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion
+					sharpnav = typeof(TiledNavMesh).GetTypeInfo().Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion
 				}
 			}));
 

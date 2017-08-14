@@ -11,7 +11,7 @@
     <StartupObject>SharpNav.CLI.Program</StartupObject>
     <AssemblyName>SharpNav</AssemblyName>
     <ApplicationIcon>..\..\Graphics\Logo\Logo.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>false</SignAssembly>
     <AssemblyOriginatorKeyFile>SharpNav.CLI.snk</AssemblyOriginatorKeyFile>
@@ -39,8 +39,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Mono.Options">
-      <HintPath>..\packages\Mono.Options.4.4.0.0\lib\net4-client\Mono.Options.dll</HintPath>
+    <Reference Include="Mono.Options, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mono.Options.5.3.0.1\lib\net4-client\Mono.Options.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SharpNav\SharpNav.csproj">
-      <Project>{0e3c6e73-cce6-4148-b847-36487ffea225}</Project>
+      <Project>{df7d7af8-9081-48cc-bb54-98b616d284ef}</Project>
       <Name>SharpNav</Name>
     </ProjectReference>
   </ItemGroup>

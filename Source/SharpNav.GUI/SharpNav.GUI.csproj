@@ -10,7 +10,7 @@
     <RootNamespace>SharpNav.GUI</RootNamespace>
     <AssemblyName>SharpNavGUI</AssemblyName>
     <ApplicationIcon>..\..\Graphics\Logo\Logo.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>SharpNav.GUI.snk</AssemblyOriginatorKeyFile>
@@ -61,15 +61,15 @@
     <None Include="SharpNav.GUI.snk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SharpNav\SharpNav.csproj">
-      <Project>{0e3c6e73-cce6-4148-b847-36487ffea225}</Project>
-      <Name>SharpNav</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="ConfigurationForm.resx">
       <DependentUpon>ConfigurationForm.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharpNav\SharpNav.csproj">
+      <Project>{df7d7af8-9081-48cc-bb54-98b616d284ef}</Project>
+      <Name>SharpNav</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

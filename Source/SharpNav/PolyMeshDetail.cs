@@ -3,7 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 using SharpNav.Geometry;
 
 #if MONOGAME
@@ -768,7 +768,7 @@ namespace SharpNav
 
 			if (tris.Count == 0)
 			{
-				Console.WriteLine("Can't triangulate polygon, adding default data.");
+				Debug.WriteLine("Can't triangulate polygon, adding default data.");
 				return;
 			}
 
@@ -1109,7 +1109,7 @@ namespace SharpNav
 				if (t.VertexHash0 == -1 || t.VertexHash1 == -1 || t.VertexHash2 == -1)
 				{
 					//remove dangling face
-					Console.WriteLine("WARNING: removing dangling face.");
+					Debug.WriteLine("WARNING: removing dangling face.");
 					tris[i] = tris[tris.Count - 1];
 					tris.RemoveAt(tris.Count - 1);
 					i--;

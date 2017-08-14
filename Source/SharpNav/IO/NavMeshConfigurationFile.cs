@@ -47,7 +47,7 @@ namespace SharpNav.IO
 			data.Meshes = InputMeshes;
 
 			var serializer = new Serializer(SerializationOptions.None, new HyphenatedNamingConvention());
-			using (StreamWriter writer = new StreamWriter(path))
+			using (StreamWriter writer = new StreamWriter(new FileStream(path, FileMode.Create)))
 				serializer.Serialize(writer, data);
 		}
 

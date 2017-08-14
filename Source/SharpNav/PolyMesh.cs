@@ -3,7 +3,7 @@
 
 using System;
 using System.Collections.Generic;
-
+using System.Diagnostics;
 using SharpNav.Geometry;
 
 #if MONOGAME
@@ -105,7 +105,7 @@ namespace SharpNav
 				int ntris = Triangulate(cont.Vertices.Length, vertices, indices, tris);
 				if (ntris <= 0) //TODO notify user when this happens. Logging?
 				{
-					Console.WriteLine("ntris <= 0");
+					Debug.WriteLine("ntris <= 0");
 					ntris = -ntris;
 				}
 
