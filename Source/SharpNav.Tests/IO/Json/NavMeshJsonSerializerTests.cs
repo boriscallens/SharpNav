@@ -2,9 +2,7 @@
 // Licensed under the MIT License - https://raw.github.com/Robmaister/SharpNav/master/LICENSE
 
 using System.IO;
-
 using NUnit.Framework;
-
 using SharpNav.IO.Json;
 
 namespace SharpNav.Tests
@@ -19,7 +17,7 @@ namespace SharpNav.Tests
 			string snjPath = Path.Combine(TestContext.CurrentContext.TestDirectory, "mesh.snj");
 
 			var objModel = new ObjModel(objPath);
-			TiledNavMesh mesh = NavMesh.Generate(objModel.GetTriangles(), NavMeshGenerationSettings.Default);
+		    TiledNavMesh mesh = NavMesh.Generate(objModel.GetTriangles(), NavMeshGenerationSettings.Default);
 			new NavMeshJsonSerializer().Serialize(snjPath, mesh);
 
 			TiledNavMesh deserializedMesh = new NavMeshJsonSerializer().Deserialize(snjPath);
